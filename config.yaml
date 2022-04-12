@@ -13,9 +13,9 @@ params:
   # titleLogo: favicon.ico
 
   brand:
-    emoji: '😎'
+    emoji: '🧠'
     # text: 'WittyJudge'
-    # logo: favicon.ico
+    # logo: coffee.ico
  
   # Enable float footnotes.
   # Default to true
@@ -68,7 +68,7 @@ params:
 menu:
   header:
     - name: Blog
-      url: "/blog"
+      url: "/blog/"
   footer:
     - name: RSS
       url: "/index.xml"
