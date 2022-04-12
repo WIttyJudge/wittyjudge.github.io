@@ -31,7 +31,7 @@ params:
     toggle: true
     # Default colorScheme
     # Default to auto
-    default: dark
+    default: auto
 
   # Limit how many categories filter show above search input.
   # Default to 5
@@ -67,8 +67,8 @@ params:
 
 menu:
   header:
-    - name: Articles
-      url: "/articles/"
+    - name: Blog
+      url: "/blog"
   footer:
     - name: RSS
       url: "/index.xml"

@@ -4,7 +4,8 @@ date: 2021-05-22
 description: A brief guide to setup MathJax
 categories:
 - math
-mathjax: true
+mathjax: false
+katex: true
 ---
 
 The following
