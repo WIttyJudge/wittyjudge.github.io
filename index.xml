@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WittyJudge</title><link>https://example.com/</link><description>Recent content on WittyJudge</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Footnote test</title><link>https://example.com/blog/footnote/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/blog/footnote/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WittyJudge</title><link>https://example.com/</link><description>Recent content on WittyJudge</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Footnote test</title><link>https://example.com/posts/footnote/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/posts/footnote/</guid><description>
 &lt;p>Lorem ipsum dolor sit amet&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> consectetur adipisicing elit. Nemo tempora eum cumque neque voluptatum, odit ipsum consequatur animi.&lt;/p>
 &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora eum cumque neque voluptatum, odit ipsum&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> consequatur animi.&lt;/p>
 &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora eum cumque neque voluptatum, odit ipsum consequatur animi.&lt;/p>
@@ -13,7 +13,7 @@
 &lt;p>Test Footnote2&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Katex support</title><link>https://example.com/blog/test-katex/</link><pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/blog/test-katex/</guid><description>
+&lt;/section></description></item><item><title>Katex support</title><link>https://example.com/posts/test-katex/</link><pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/posts/test-katex/</guid><description>
 &lt;p>The following&lt;/p>
 &lt;p>$$ \int_{a}^{b} x^2 dx $$&lt;/p>
 &lt;p>Is an integral&lt;/p>
@@ -42,7 +42,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Block math:&lt;/p>
-&lt;p>$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$&lt;/p></description></item><item><title>MathJax support</title><link>https://example.com/blog/test-mathjax/</link><pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/blog/test-mathjax/</guid><description>
+&lt;p>$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$&lt;/p></description></item><item><title>MathJax support</title><link>https://example.com/posts/test-mathjax/</link><pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/posts/test-mathjax/</guid><description>
 &lt;p>The following&lt;/p>
 &lt;p>$$ \int_{a}^{b} x^2 dx $$&lt;/p>
 &lt;p>Is an integral&lt;/p>
@@ -70,7 +70,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Block math:&lt;/p>
-&lt;p>$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://example.com/blog/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/blog/markdown-syntax/</guid><description>
+&lt;p>$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://example.com/posts/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/posts/markdown-syntax/</guid><description>
 &lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">
 &lt;a href="#headings" class="anchor">
@@ -439,7 +439,7 @@ Other Elements — abbr, sub, sup, kbd, mark
 &lt;p>The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk&lt;/a> during Gopherfest, November 18, 2015.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Example Lazy Load Image</title><link>https://example.com/blog/example-lazy-load-image/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/blog/example-lazy-load-image/</guid><description>
+&lt;/section></description></item><item><title>Example Lazy Load Image</title><link>https://example.com/posts/example-lazy-load-image/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/posts/example-lazy-load-image/</guid><description>
 &lt;h2 id="nya-nya-nyan-meow-meow-mama">
 &lt;a href="#nya-nya-nyan-meow-meow-mama" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -511,7 +511,7 @@ alt="Cute CAT"
 src="https://images.unsplash.com/photo-1489084917528-a57e68a79a1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;ixlib=rb-1.2.1&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=750&amp;amp;q=80"
 alt="Cute CAT"
 />&lt;/p>
-&lt;p>Thanks by cats.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://example.com/blog/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/blog/placeholder-text/</guid><description>
+&lt;p>Thanks by cats.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://example.com/posts/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/posts/placeholder-text/</guid><description>
 &lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
 &lt;p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p>
 &lt;ol>
@@ -552,7 +552,7 @@ Mane refeci capiebant unda mulcebat
 &lt;/h2>
 &lt;p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong>Faces illo pepulere&lt;/strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p>
 &lt;p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p>
-&lt;p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong>mitis temploque&lt;/strong> vocatus, inque alis, &lt;em>oculos nomen&lt;/em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong>parte&lt;/strong>.&lt;/p></description></item><item><title>Emoji Support</title><link>https://example.com/blog/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/blog/emoji-support/</guid><description>
+&lt;p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong>mitis temploque&lt;/strong> vocatus, inque alis, &lt;em>oculos nomen&lt;/em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong>parte&lt;/strong>.&lt;/p></description></item><item><title>Emoji Support</title><link>https://example.com/posts/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://example.com/posts/emoji-support/</guid><description>
 &lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
 &lt;p>The &lt;a href="https://gohugo.io/functions/emojify/">&lt;code>emojify&lt;/code>&lt;/a> function can be called directly in templates or &lt;a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes&lt;/a>.&lt;/p>
 &lt;p>To enable emoji globally, set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code> in your site&amp;rsquo;s &lt;a href="https://gohugo.io/getting-started/configuration/">configuration&lt;/a> and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p>
