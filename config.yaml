@@ -15,7 +15,7 @@ params:
   brand:
     emoji: '👨🏻💻'
     # text: 'WittyJudge'
-    # logo: coffee.ico
+    # logo: logo/coffee.ico
  
   # Enable float footnotes.
   # Default to true
@@ -73,10 +73,12 @@ menu:
     - name: RSS
       url: "/index.xml"
 
+# https://gohugo.io/content-management/syntax-highlighting/
 markup:
   highlight:
     noClasses: false
-    lineNos: true
+    lineNos: false
+    # style: monokai
   goldmark:
     renderer:
       unsafe: true
