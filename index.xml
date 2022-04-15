@@ -99,7 +99,8 @@ Step 3 - Enable IP forwarding on the server
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;net.ipv4.ip_forward=1&amp;#34;&lt;/span> &amp;gt;&amp;gt; /etc/sysctl.conf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check out is that string was added.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sysctl -p
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="step-4---generate-server-and-clients-private-and-public-keys">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-output" data-lang="output">net.ipv4.ip_forward = 1
+&lt;/code>&lt;/pre>&lt;h3 id="step-4---generate-server-and-clients-private-and-public-keys">
 &lt;a href="#step-4---generate-server-and-clients-private-and-public-keys" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 &lt;path fill-rule="evenodd"
@@ -214,17 +215,17 @@ Apr 14 19:08:04 wireguard wg-quick[32190]: [#] ip -4 address add 10.0.0.1/24 dev
 Apr 14 19:08:04 wireguard wg-quick[32190]: [#] ip link set mtu 1420 up dev wg0
 Apr 14 19:08:04 wireguard wg-quick[32190]: [#] iptables -A FORWARD -i wg0 -j ACCEPT; iptables -A FORWARD -o wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 Apr 14 19:08:04 wireguard systemd[1]: Finished WireGuard via wg-quick(8) for wg0.
-&lt;/code>&lt;/pre>&lt;h3 id="step-6---create-client-config-anroid">
-&lt;a href="#step-6---create-client-config-anroid" class="anchor">
+&lt;/code>&lt;/pre>&lt;h3 id="step-6---create-client-config-android">
+&lt;a href="#step-6---create-client-config-android" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 &lt;path fill-rule="evenodd"
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
 &lt;/path>
 &lt;/svg>
 &lt;/a>
-Step 6 - Create client config (Anroid)
+Step 6 - Create client config (Android)
 &lt;/h3>
-&lt;p>Create file called &lt;strong>android.conf&lt;/strong> and add the following content.&lt;/p>
+&lt;p>Create file called &lt;strong>android-client.conf&lt;/strong> and add the following content.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>Interface&lt;span class="o">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PrivateKey&lt;/span> &lt;span class="o">=&lt;/span> &amp;lt;Android client private key&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">Address&lt;/span> &lt;span class="o">=&lt;/span> 10.0.0.5/24
@@ -233,14 +234,14 @@ Step 6 - Create client config (Anroid)
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>Peer&lt;span class="o">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PublicKey&lt;/span> &lt;span class="o">=&lt;/span> &amp;lt;Server public key&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">Endpoint&lt;/span> &lt;span class="o">=&lt;/span> &amp;lt;SERVER-IP&amp;gt;:51820
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">AllowedIPs&lt;/span> &lt;span class="o">=&lt;/span> 10.0.0.0/24
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">AllowedIPs&lt;/span> &lt;span class="o">=&lt;/span> 0.0.0.0/0
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PersistentKeepalive&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">20&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>AllowedIPs = 0.0.0.0/0&lt;/strong> will allow you to route all traffic though the VPN tunnel.&lt;/p>
 &lt;p>Now we need to transfer this config to the smartphone. Of course, you can somehow move this file, but it&amp;rsquo;s more convenient to use a QR-code.&lt;/p>
 &lt;p>Install &lt;code>qrencode&lt;/code>.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt install qrencode
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Use it&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">qrencode -t ansiutf8 &amp;lt; android.conf
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">qrencode -t ansiutf8 &amp;lt; android-client.conf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>After that we will see the QR code in terminal.
 All we have to do is to scan it using WireGuard app on the mobile phone.
 You can install it in &lt;a href="https://play.google.com/store/apps/details?id=com.wireguard.android&amp;amp;hl=en_US&amp;amp;gl=US">Play Market&lt;/a> or &lt;a href="https://f-droid.org/packages/com.wireguard.android">F-Droid&lt;/a>&lt;/p></description></item></channel></rss>
