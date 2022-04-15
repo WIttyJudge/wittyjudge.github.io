@@ -82,6 +82,10 @@ Check out is that string was added.
 sysctl -p
 ```
 
+```output
+net.ipv4.ip_forward = 1
+```
+
 ### Step 4 - Generate server and clients private and public keys
 
 Change directory to `/etc/wireguard`.
@@ -202,9 +206,9 @@ Apr 14 19:08:04 wireguard wg-quick[32190]: [#] iptables -A FORWARD -i wg0 -j ACC
 Apr 14 19:08:04 wireguard systemd[1]: Finished WireGuard via wg-quick(8) for wg0.
 ```
 
-### Step 6 - Create client config (Anroid)
+### Step 6 - Create client config (Android)
 
-Create file called **android.conf** and add the following content.
+Create file called **android-client.conf** and add the following content.
 
 ```bash
 [Interface]
@@ -215,7 +219,7 @@ DNS = 1.1.1.1
 [Peer]
 PublicKey = <Server public key>
 Endpoint = <SERVER-IP>:51820
-AllowedIPs = 10.0.0.0/24
+AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 20
 ```
 
@@ -232,7 +236,7 @@ apt install qrencode
 Use it
 
 ```bash
-qrencode -t ansiutf8 < android.conf
+qrencode -t ansiutf8 < android-client.conf
 ```
 
 After that we will see the QR code in terminal.
