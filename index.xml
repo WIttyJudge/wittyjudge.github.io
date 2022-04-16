@@ -15,12 +15,61 @@ Introduction
 &lt;li>It gives you more freedom to access the internet safely from your smartphone or laptop when connected to a doubt network, like any public WiFi.&lt;/li>
 &lt;li>You have an access to websites blocked in your country for some reasons.&lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>Here are just a few reasons why WireGuard is so awesome:&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>It implemented in less then 4,000 lines of code, it means that really &lt;strong>easy to auditing and reviewing the code&lt;/strong> for security vulnerabilities.&lt;/li>
-&lt;li>It uses &lt;strong>modern cryptography&lt;/strong> (&lt;a href="http://www.noiseprotocol.org/">Noise protocol framework&lt;/a>, Curve25519, ChaCha20Poly1305, SipHash-2-4, HKDF, etc.).&lt;/li>
-&lt;li>It&amp;rsquo;s an &lt;strong>incredibly fast&lt;/strong>. Check out the performance comparison charts done by the Jason Donenfeld, the WireGuard author.&lt;/li>
-&lt;/ol>
+&lt;!-- **Here are just a few reasons why WireGuard is so awesome:** -->
+&lt;h2 id="wireguard-is-so-awesome-but-why">
+&lt;a href="#wireguard-is-so-awesome-but-why" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+WireGuard is so awesome. But why?
+&lt;/h2>
+&lt;h3 id="minimal-code-base">
+&lt;a href="#minimal-code-base" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Minimal code base
+&lt;/h3>
+&lt;p>In fact, it&amp;rsquo;s implemented in less then 4,000 lines of code.
+It&amp;rsquo;s much &lt;strong>easier to audit and reviewing the code&lt;/strong> for security vulnerabilities.&lt;/p>
+&lt;p>For example, OpenVPN has approximently 600,000 and IPsec around 400,000.
+WireGuard stands out significantly.&lt;/p>
+&lt;h3 id="modern-cryptography">
+&lt;a href="#modern-cryptography" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Modern cryptography
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://www.noiseprotocol.org/">Noise protocol framework&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cr.yp.to/ecdh.html">Curve25519&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cr.yp.to/chacha.html">ChaCha20&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.aumasson.jp/">SipHash-2-4&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.blake2.net/">BLAKE2s&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://eprint.iacr.org/2010/264">HKDF&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>You can read more about WireGuard&amp;rsquo;s cryptography on the &lt;a href="">official website&lt;/a> or in the &lt;a href="https://www.wireguard.com/papers/wireguard.pdf">technical white paper [PDF]&lt;/a>&lt;/p>
+&lt;h3 id="incredibly-fast">
+&lt;a href="#incredibly-fast" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Incredibly fast
+&lt;/h3>
+&lt;p>Check out the performance comparison charts done by the Jason Donenfeld, the WireGuard author.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Benchmarked&lt;/strong> alongside IPSec in two modes and OpenVPN.&lt;/li>
 &lt;li>&lt;strong>CPUs&lt;/strong>: Intel Core i7-3820QM and Intel Core i7-5200U.&lt;/li>
