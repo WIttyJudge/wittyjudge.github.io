@@ -67,8 +67,8 @@ params:
 
 menu:
   header:
-    - name: Posts
-      url: "/posts/"
+    - name: Articles
+      url: "/articles/"
   footer:
     - name: RSS
       url: "/index.xml"

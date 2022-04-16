@@ -1,5 +1,5 @@
 ---
-title: "Set up WireGuard on your own Ubuntu 20.04 server"
+title: "How to set up WireGuard on your own Ubuntu 20.04 server"
 date: "2022-04-15"
 description: "
   WireGuard is a lightweight communication protocol that implements encrypted virtual privacy network.
@@ -8,22 +8,25 @@ description: "
 tags:
   - vpn
   - opensource
+categories:
+  - vpn
+  - opensource
 ---
 
 ## Introduction
 
 [WireGuard](https://www.wireguard.com/) is a lightweight communication protocol that implements encrypted virtual privacy network (VPN).
 
-**In my humble opinion, if you are simple user, use should use VPN, because:**
+**In my humble opinion, if you are simple user, you should use VPN, because:**
 
 1. It gives you more freedom to access the internet safely from your smartphone or laptop when connected to a doubt network, like any public WiFi.
-2. You have an access to websites blocked in your country for some reason.
+2. You have an access to websites blocked in your country for some reasons.
 
-**Here are just a few reasons why WireGuard is so cool:**
+**Here are just a few reasons why WireGuard is so awesome:**
 
-1. It implemented in less then 4,000 lines of code, that means it's really **easy to auditing and reviewing the code** for security vulnerabilities.
+1. It implemented in less then 4,000 lines of code, it means that really **easy to auditing and reviewing the code** for security vulnerabilities.
 2. It uses **modern cryptography** ([Noise protocol framework](http://www.noiseprotocol.org/), Curve25519, ChaCha20Poly1305, SipHash-2-4, HKDF, etc.).
-3. It''s an **incredibly fast**, check out the performance comparison charts done by the WireGuard author, Jason Donenfeld.
+3. It's an **incredibly fast**. Check out the performance comparison charts done by the Jason Donenfeld, the WireGuard author.
 
 - **Benchmarked** alongside IPSec in two modes and OpenVPN.
 - **CPUs**: Intel Core i7-3820QM and Intel Core i7-5200U.
@@ -31,17 +34,17 @@ tags:
 
 ![WireGuard performance charts published by author.](img/setup-wireguard-vpn/performance-by-author.png)
 
-If you're interested to setup WireGuard on your own server, keep reading.
+If you're interested in setting up WireGuard on your own server, keep reading.
 
 ## Prerequisites
 
 To follow this tutorial, you will need:
 
-- The setup steps are very similar, so you're free to use any linux distro you want, but in this guide I will use Ubuntu 20.04.
+- The setup steps are very similar, so you're free to use any Linux distribution you want, but in this guide I will use Ubuntu 20.04.
   I would recommend you choosing a server with unlimited traffic or at least 1000 GB.
-- You well need a client machine that you will use to connect to your WireGuard server. In that guide, we well create configs for two clients, **android** and **linux**.
+- You will need a client machine that you will use to connect to your WireGuard server. In that guide, we will create configs for two clients, **android** and **linux**.
 
-## Set up steps
+## Setup steps
 
 Connect to your server.
 
@@ -76,7 +79,7 @@ apt install wireguard
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 ```
 
-Check out is that string was added.
+Check out that the string was added.
 
 ```bash
 sysctl -p
@@ -86,7 +89,7 @@ sysctl -p
 net.ipv4.ip_forward = 1
 ```
 
-### Step 4 - Generate server and clients private and public keys
+### Step 4 - Generate public and private keys of server and clients
 
 Change directory to `/etc/wireguard`.
 
@@ -101,7 +104,7 @@ wg genkey | tee privatekey | wg pubkey | tee publickey
 ```
 
 Then, generate keys for our clients.
-I prefer to first create folder with the nickname or device of client that will use VPN.
+Initialy, I prefer to create folder with the nickname or device of client that will use VPN.
 In this guide, I will create configs for two clients, **android** and **linux**.
 
 ```bash
@@ -161,7 +164,7 @@ systemctl enable wg-quick@wg0
 systemctl start wg-quick@wg0
 ```
 
-Double check that the WireGuard service is active with the following command. You should see `active (running)` in the output:
+Double check that the WireGuard service is active with the following command. You have to see `active (running)` in the output:
 
 ```bash
 wg show wg0
@@ -223,9 +226,9 @@ AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 20
 ```
 
-**AllowedIPs = 0.0.0.0/0** will allow you to route all traffic though the VPN tunnel.
+**AllowedIPs = 0.0.0.0/0** will allow you to route all traffic through the VPN tunnel.
 
-Now we need to transfer this config to the smartphone. Of course, you can somehow move this file, but it's more convenient to use a QR-code.
+Now we need to transfer this config to the smartphone. Certainly, you can somehow move this file, but it's more convenient to use a QR-code.
 
 Install `qrencode`.
 
