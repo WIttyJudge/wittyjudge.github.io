@@ -22,11 +22,32 @@ categories:
 1. It gives you more freedom to access the internet safely from your smartphone or laptop when connected to a doubt network, like any public WiFi.
 2. You have an access to websites blocked in your country for some reasons.
 
-**Here are just a few reasons why WireGuard is so awesome:**
+<!-- **Here are just a few reasons why WireGuard is so awesome:** -->
 
-1. It implemented in less then 4,000 lines of code, it means that really **easy to auditing and reviewing the code** for security vulnerabilities.
-2. It uses **modern cryptography** ([Noise protocol framework](http://www.noiseprotocol.org/), Curve25519, ChaCha20Poly1305, SipHash-2-4, HKDF, etc.).
-3. It's an **incredibly fast**. Check out the performance comparison charts done by the Jason Donenfeld, the WireGuard author.
+## WireGuard is so awesome. But why?
+
+### Minimal code base
+
+In fact, it's implemented in less then 4,000 lines of code.
+It's much **easier to audit and reviewing the code** for security vulnerabilities.
+
+For example, OpenVPN has approximently 600,000 and IPsec around 400,000.
+WireGuard stands out significantly.
+
+### Modern cryptography
+
+- [Noise protocol framework](http://www.noiseprotocol.org/)
+- [Curve25519](https://cr.yp.to/ecdh.html)
+- [ChaCha20](https://cr.yp.to/chacha.html)
+- [SipHash-2-4](https://www.aumasson.jp/)
+- [BLAKE2s](https://www.blake2.net/)
+- [HKDF](https://eprint.iacr.org/2010/264)
+
+You can read more about WireGuard's cryptography on the [official website]() or in the [technical white paper [PDF]](https://www.wireguard.com/papers/wireguard.pdf)
+
+### Incredibly fast
+
+Check out the performance comparison charts done by the Jason Donenfeld, the WireGuard author.
 
 - **Benchmarked** alongside IPSec in two modes and OpenVPN.
 - **CPUs**: Intel Core i7-3820QM and Intel Core i7-5200U.
