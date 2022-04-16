@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WittyJudge</title><link>https://example.com/</link><description>Recent content on WittyJudge</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Set up WireGuard on your own Ubuntu 20.04 server</title><link>https://example.com/posts/setup-wireguard-vpn/</link><pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate><guid>https://example.com/posts/setup-wireguard-vpn/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WittyJudge</title><link>https://example.com/</link><description>Recent content on WittyJudge</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How to set up WireGuard on your own Ubuntu 20.04 server</title><link>https://example.com/posts/setup-wireguard-vpn/</link><pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate><guid>https://example.com/posts/setup-wireguard-vpn/</guid><description>
 &lt;h2 id="introduction">
 &lt;a href="#introduction" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -10,16 +10,16 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 Introduction
 &lt;/h2>
 &lt;p>&lt;a href="https://www.wireguard.com/">WireGuard&lt;/a> is a lightweight communication protocol that implements encrypted virtual privacy network (VPN).&lt;/p>
-&lt;p>&lt;strong>In my humble opinion, if you are simple user, use should use VPN, because:&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>In my humble opinion, if you are simple user, you should use VPN, because:&lt;/strong>&lt;/p>
 &lt;ol>
 &lt;li>It gives you more freedom to access the internet safely from your smartphone or laptop when connected to a doubt network, like any public WiFi.&lt;/li>
-&lt;li>You have an access to websites blocked in your country for some reason.&lt;/li>
+&lt;li>You have an access to websites blocked in your country for some reasons.&lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>Here are just a few reasons why WireGuard is so cool:&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Here are just a few reasons why WireGuard is so awesome:&lt;/strong>&lt;/p>
 &lt;ol>
-&lt;li>It implemented in less then 4,000 lines of code, that means it&amp;rsquo;s really &lt;strong>easy to auditing and reviewing the code&lt;/strong> for security vulnerabilities.&lt;/li>
+&lt;li>It implemented in less then 4,000 lines of code, it means that really &lt;strong>easy to auditing and reviewing the code&lt;/strong> for security vulnerabilities.&lt;/li>
 &lt;li>It uses &lt;strong>modern cryptography&lt;/strong> (&lt;a href="http://www.noiseprotocol.org/">Noise protocol framework&lt;/a>, Curve25519, ChaCha20Poly1305, SipHash-2-4, HKDF, etc.).&lt;/li>
-&lt;li>It&amp;rsquo;&amp;rsquo;s an &lt;strong>incredibly fast&lt;/strong>, check out the performance comparison charts done by the WireGuard author, Jason Donenfeld.&lt;/li>
+&lt;li>It&amp;rsquo;s an &lt;strong>incredibly fast&lt;/strong>. Check out the performance comparison charts done by the Jason Donenfeld, the WireGuard author.&lt;/li>
 &lt;/ol>
 &lt;ul>
 &lt;li>&lt;strong>Benchmarked&lt;/strong> alongside IPSec in two modes and OpenVPN.&lt;/li>
@@ -31,7 +31,7 @@ src="https://example.com/img/setup-wireguard-vpn/performance-by-author.png"
 alt="WireGuard performance charts published by author."
 width=803
 height="380" />&lt;/p>
-&lt;p>If you&amp;rsquo;re interested to setup WireGuard on your own server, keep reading.&lt;/p>
+&lt;p>If you&amp;rsquo;re interested in setting up WireGuard on your own server, keep reading.&lt;/p>
 &lt;h2 id="prerequisites">
 &lt;a href="#prerequisites" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -44,19 +44,19 @@ Prerequisites
 &lt;/h2>
 &lt;p>To follow this tutorial, you will need:&lt;/p>
 &lt;ul>
-&lt;li>The setup steps are very similar, so you&amp;rsquo;re free to use any linux distro you want, but in this guide I will use Ubuntu 20.04.
+&lt;li>The setup steps are very similar, so you&amp;rsquo;re free to use any Linux distribution you want, but in this guide I will use Ubuntu 20.04.
 I would recommend you choosing a server with unlimited traffic or at least 1000 GB.&lt;/li>
-&lt;li>You well need a client machine that you will use to connect to your WireGuard server. In that guide, we well create configs for two clients, &lt;strong>android&lt;/strong> and &lt;strong>linux&lt;/strong>.&lt;/li>
+&lt;li>You will need a client machine that you will use to connect to your WireGuard server. In that guide, we will create configs for two clients, &lt;strong>android&lt;/strong> and &lt;strong>linux&lt;/strong>.&lt;/li>
 &lt;/ul>
-&lt;h2 id="set-up-steps">
-&lt;a href="#set-up-steps" class="anchor">
+&lt;h2 id="setup-steps">
+&lt;a href="#setup-steps" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 &lt;path fill-rule="evenodd"
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
 &lt;/path>
 &lt;/svg>
 &lt;/a>
-Set up steps
+Setup steps
 &lt;/h2>
 &lt;p>Connect to your server.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ssh root@&amp;lt;ip&amp;gt;
@@ -97,25 +97,25 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 Step 3 - Enable IP forwarding on the server
 &lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;net.ipv4.ip_forward=1&amp;#34;&lt;/span> &amp;gt;&amp;gt; /etc/sysctl.conf
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check out is that string was added.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check out that the string was added.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sysctl -p
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-output" data-lang="output">net.ipv4.ip_forward = 1
-&lt;/code>&lt;/pre>&lt;h3 id="step-4---generate-server-and-clients-private-and-public-keys">
-&lt;a href="#step-4---generate-server-and-clients-private-and-public-keys" class="anchor">
+&lt;/code>&lt;/pre>&lt;h3 id="step-4---generate-public-and-private-keys-of-server-and-clients">
+&lt;a href="#step-4---generate-public-and-private-keys-of-server-and-clients" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 &lt;path fill-rule="evenodd"
 d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
 &lt;/path>
 &lt;/svg>
 &lt;/a>
-Step 4 - Generate server and clients private and public keys
+Step 4 - Generate public and private keys of server and clients
 &lt;/h3>
 &lt;p>Change directory to &lt;code>/etc/wireguard&lt;/code>.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /etc/wireguard
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Generate public and private server keys.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wg genkey &lt;span class="p">|&lt;/span> tee privatekey &lt;span class="p">|&lt;/span> wg pubkey &lt;span class="p">|&lt;/span> tee publickey
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then, generate keys for our clients.
-I prefer to first create folder with the nickname or device of client that will use VPN.
+Initialy, I prefer to create folder with the nickname or device of client that will use VPN.
 In this guide, I will create configs for two clients, &lt;strong>android&lt;/strong> and &lt;strong>linux&lt;/strong>.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir android
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir linux
@@ -186,7 +186,7 @@ Step 5 - Start the WireGuard server
 &lt;p>Now start the service.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl &lt;span class="nb">enable&lt;/span> wg-quick@wg0
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl start wg-quick@wg0
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Double check that the WireGuard service is active with the following command. You should see &lt;code>active (running)&lt;/code> in the output:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Double check that the WireGuard service is active with the following command. You have to see &lt;code>active (running)&lt;/code> in the output:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wg show wg0
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-output" data-lang="output">interface: wg0
 public key: &amp;lt;Public server key here&amp;gt;
@@ -236,8 +236,8 @@ Step 6 - Create client config (Android)
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">Endpoint&lt;/span> &lt;span class="o">=&lt;/span> &amp;lt;SERVER-IP&amp;gt;:51820
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">AllowedIPs&lt;/span> &lt;span class="o">=&lt;/span> 0.0.0.0/0
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">PersistentKeepalive&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">20&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>AllowedIPs = 0.0.0.0/0&lt;/strong> will allow you to route all traffic though the VPN tunnel.&lt;/p>
-&lt;p>Now we need to transfer this config to the smartphone. Of course, you can somehow move this file, but it&amp;rsquo;s more convenient to use a QR-code.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>AllowedIPs = 0.0.0.0/0&lt;/strong> will allow you to route all traffic through the VPN tunnel.&lt;/p>
+&lt;p>Now we need to transfer this config to the smartphone. Certainly, you can somehow move this file, but it&amp;rsquo;s more convenient to use a QR-code.&lt;/p>
 &lt;p>Install &lt;code>qrencode&lt;/code>.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt install qrencode
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Use it&lt;/p>
