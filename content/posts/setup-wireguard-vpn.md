@@ -1,16 +1,11 @@
 ---
-title: "How to set up WireGuard on your own Ubuntu 20.04 server"
-date: "2022-04-15"
-description: "
+title: How to set up WireGuard on your own Ubuntu 20.04 server
+date: 2022-04-15
+description: >-
   WireGuard is a lightweight communication protocol that implements encrypted virtual privacy network.
   In this guide, we will setup WireGuard VPN on your own Ubuntu 20.04 server.
-"
-tags:
-  - vpn
-  - opensource
-categories:
-  - vpn
-  - opensource
+tags: ['vpn', 'opensource']
+keywords: ['Vpn', 'Opensource', 'Wireguard', 'Setup', 'Self-hosted Wireguard']
 ---
 
 ## Introduction

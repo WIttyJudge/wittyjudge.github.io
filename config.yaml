@@ -1,88 +1,102 @@
-baseurl: "https://example.com"
-languageCode: "en-us"
-title: "WittyJudge"
-theme: "hugo-tania"
-paginate: 6
+baseURL: "https://adityatelange.github.io/hugo-PaperMod/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: WittyJudge
+paginate: 5
+theme: PaperMod
 
-disqusShortname: https-hugo-tania-netlify-app
+enableRobotsTXT: true
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search
+          weight: 10
+        - name: Tags
+          url: tags
+          weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 params:
-  # Emoji will show before the blog title on site navbar.
-  # titleEmoji:
-  # Logo will show before the blog title on site navbar.
-  # titleLogo: favicon.ico
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  # comments: false
 
-  brand:
-    emoji: '👨🏻💻'
-    # text: 'WittyJudge'
-    # logo: logo/coffee.ico
- 
-  # Enable float footnotes.
-  # Default to true
-  enableFootnotes: true
- 
-  siteName: "WittyJudge personal blog, rss feed, csv"
-  siteDesc: "WittyJudge personal blog, rss feed, csv"
-  author: "WittyJudge"
+  homeInfoParams:
+    # Title: "PaperMod"
+    Content: >
+      - Fall in love with Backend development
 
-  colorScheme:
-    # Enable toggle colorScheme
-    # Default to true
-    toggle: true
-    # Default colorScheme
-    # Default to auto
-    default: auto
+      - On Linux, Neovim, CLI tools, and general productivity
 
-  # Limit how many categories filter show above search input.
-  # Default to 5
-  maxCategoryToShow: 10
+  socialIcons:
+    - name: github
+      url: "https://github.com/wittyjudge"
+    - name: rss
+      url: "index.xml"
+    - name: cv
+      url: "/resume.pdf"
 
-  # Show your socail information with icon on index bio with `_index.md` content.
-  socialOptions:
-    dev-to:
-    email: 'ruslan.kondratyuk.dev@gmail.com'
-    facebook:
-    github: 'https://github.com/wittyjudge'
-    instagram:
-    linkedin:
-    medium:
-    stack-overflow:
-    steam:
-    telegram:
-    twitter:
-    twitch:
-    whatsapp:
-  
-  # Comments settings
-  comments:
-    enabled: false
-    provider: giscus
+  # label:
+  #     text: "Home"
+  #     icon: icon.png
+  #     iconHeight: 35
 
-    giscus:
-      repo: WingLim/hugo-tania
-      id: MDEwOlJlcG9zaXRvcnkzMTYyNjQzMDc=
-      category:
-        name: Comments
-        id: DIC_kwDOEtnPc84B_WKP
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
 
-menu:
-  header:
-    - name: Articles
-      url: "/articles/"
-  footer:
-    - name: RSS
-      url: "/index.xml"
+  assets:
+    disableHLJS: true
 
-# https://gohugo.io/content-management/syntax-highlighting/
 markup:
-  highlight:
-    noClasses: false
-    lineNos: false
-    # style: monokai
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    noClasses: false
 
-outputs:
-  home: ["HTML", "RSS", "JSON"]
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
 
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
