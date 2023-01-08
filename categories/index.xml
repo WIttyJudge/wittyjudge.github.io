@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on WittyJudge</title><link>https://example.com/categories/</link><description>Recent content in Categories on WittyJudge</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>opensource</title><link>https://example.com/categories/opensource/</link><pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate><guid>https://example.com/categories/opensource/</guid><description/></item><item><title>vpn</title><link>https://example.com/categories/vpn/</link><pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate><guid>https://example.com/categories/vpn/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on WittyJudge</title>
+    <link>https://adityatelange.github.io/hugo-PaperMod/categories/</link>
+    <description>Recent content in Categories on WittyJudge</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://adityatelange.github.io/hugo-PaperMod/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
