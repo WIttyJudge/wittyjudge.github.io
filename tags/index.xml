@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on WittyJudge</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/tags/</link>
+    <link>https://wittyjudge.github.io/tags/</link>
     <description>Recent content in Tags on WittyJudge</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://adityatelange.github.io/hugo-PaperMod/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wittyjudge.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>opensource</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/tags/opensource/</link>
+      <link>https://wittyjudge.github.io/tags/opensource/</link>
       <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://adityatelange.github.io/hugo-PaperMod/tags/opensource/</guid>
+      <guid>https://wittyjudge.github.io/tags/opensource/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vpn</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/tags/vpn/</link>
+      <link>https://wittyjudge.github.io/tags/vpn/</link>
       <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://adityatelange.github.io/hugo-PaperMod/tags/vpn/</guid>
+      <guid>https://wittyjudge.github.io/tags/vpn/</guid>
       <description></description>
     </item>
     
