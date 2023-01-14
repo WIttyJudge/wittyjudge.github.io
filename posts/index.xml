@@ -12,7 +12,7 @@
       <pubDate>Sat, 14 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://wittyjudge.github.io/posts/arch-linux-printer-install/</guid>
-      <description>I have been using Arch Linux for about 3 years now and only recently I needed to print and scan documents with my office printer (Cannon MF260).
+      <description>I have been using Arch Linux for about 3 years now and only recently I needed to print and scan documents with my office printer (Canon MF260).
 Preconfigured Linux distros like Ubuntu, Mint, Manjaro, etc.. already provided you with some functionality to use your printer/scanner. All you need to do is just log in to your favorite DE, search for &amp;ldquo;printer&amp;rdquo; in the application launcher, click on the &amp;ldquo;Add a printer&amp;rdquo; button and it will magically discover your Wi-Fi wireless or plugged-in printer, install all drivers for that specific printer and&amp;hellip; it&amp;rsquo;s ready for use.</description>
     </item>
     
