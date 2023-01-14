@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on WittyJudge</title>
-    <link>https://wittyjudge.github.io/posts/</link>
-    <description>Recent content in Posts on WittyJudge</description>
+    <title>Linux on WittyJudge</title>
+    <link>https://wittyjudge.github.io/tags/linux/</link>
+    <description>Recent content in Linux on WittyJudge</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wittyjudge.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wittyjudge.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux Printer Install with CUPS</title>
       <link>https://wittyjudge.github.io/posts/arch-linux-printer-install/</link>
@@ -14,17 +14,6 @@
       <guid>https://wittyjudge.github.io/posts/arch-linux-printer-install/</guid>
       <description>I have been using Arch Linux for about 3 years now and only recently I needed to print and scan documents with my office printer (Cannon MF260).
 Preconfigured Linux distros like Ubuntu, Mint, Manjaro, etc.. already provided you with some functionality to use your printer/scanner. All you need to do is just log in to your favorite DE, search for &amp;ldquo;printer&amp;rdquo; in the application launcher, click on the &amp;ldquo;Add a printer&amp;rdquo; button and it will magically discover your Wi-Fi wireless or plugged-in printer, install all drivers for that specific printer and&amp;hellip; it&amp;rsquo;s ready for use.</description>
-    </item>
-    
-    <item>
-      <title>How to set up WireGuard on your own Ubuntu 20.04 server</title>
-      <link>https://wittyjudge.github.io/posts/setup-wireguard-vpn/</link>
-      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://wittyjudge.github.io/posts/setup-wireguard-vpn/</guid>
-      <description>Introduction WireGuard is a lightweight communication protocol that implements encrypted virtual privacy network (VPN).
-In my humble opinion, if you are simple user, you should use VPN, because:
-It gives you more freedom to access the internet safely from your smartphone or laptop when connected to a doubt network, like any public WiFi. You have an access to websites blocked in your country for some reasons. WireGuard is so awesome. But why?</description>
     </item>
     
   </channel>
