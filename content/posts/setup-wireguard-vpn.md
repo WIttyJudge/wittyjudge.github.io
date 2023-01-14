@@ -1,6 +1,8 @@
 ---
 title: How to set up WireGuard on your own Ubuntu 20.04 server
 date: 2022-04-15
+cover:
+  image: 'img/setup-wireguard-vpn/cover.avif'
 tags: ['VPN', 'Wireguard']
 ---
 
