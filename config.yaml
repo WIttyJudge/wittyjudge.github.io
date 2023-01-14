@@ -46,9 +46,9 @@ params:
   homeInfoParams:
     # Title: "PaperMod"
     Content: >
-      - Fall in love with Backend development
+      - Fall in love with Backend development.
 
-      - On Linux, Neovim, CLI tools, and general productivity
+      - Linux, Neovim, CLI tools, and general productivity
 
   socialIcons:
     - name: github
