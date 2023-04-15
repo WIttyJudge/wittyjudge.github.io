@@ -2,7 +2,7 @@
 title: Arch Linux Printer Install with CUPS
 date: 2023-01-14
 cover:
-  image: 'img/arch-linux-printer-install/cover.avif'
+  image: "images/cover.avif"
 tags: ["Arch Linux", "Linux", "CUPS", "Printer"]
 ---
 
@@ -31,13 +31,13 @@ $ sudo systemctl enable --now cups
 ```
 
 Add your user to the `lp` group.
-This will give your user permission to access the printer:
+User will have permission to access the printer.
 
 ```
 $ sudo usermod -aG lp $USER
 ```
 
-Don't forget to connect your printer to your computer using a USB cable or via a network connection.
+Make sure to establish a connection between your computer and the printer either via a USB cable or a network connection.
 
 At this moment, we are ready to install the graphical program.
 There are several programs available but I typically install simple and small GTK program called [system-config-printer](https://github.com/OpenPrinting/system-config-printer).
@@ -46,29 +46,30 @@ There are several programs available but I typically install simple and small GT
 $ sudo pacman -S system-config-printer
 ```
 
-So open up the program and you will see the "Add" button on the center of the screen.
-Click on that button and it should detect the printer, select the model of your detected printer, and in the next step it should detect the drivers for that printer.
+To get started, open the program and you will see the "Add" button at the center of the screen.
+Click on this button, and the program will scan for your printer.
+From the list that appeared, chose the model of your printer.
+In the next step, the program should automatically detect and install the drivers for your printer.
 
-I had a `Canon MF260` printer and I didn't face any issues, but as I heard someone else did.
-If you have any issues, maybe your printer or drivers for that printer wasn't detected, [Troubleshooting](#troubleshooting) may help you.
+I personally used a `Canon MF260` printer and did not encounter any issues during this process.
+However, I have heard that some users may experience difficulty if their printer or drivers are not detected.
+[Troubleshooting](#references) section may help you.
 
-## Troubleshooting
+## Test Page
 
-If you have any problems, here are some arch wiki guides that may help you:
+![Test Page Photo](images/test-page.avif)
 
-[CUPS/Printer-specific problems](https://wiki.archlinux.org/title/CUPS/Printer-specific_problems)
+## References
 
-[CUPS/Troubleshooting](https://wiki.archlinux.org/title/CUPS/Troubleshooting)
+- Troubleshooting
 
-## Useful links
+  - [CUPS/Printer-specific problems](https://wiki.archlinux.org/title/CUPS/Printer-specific_problems)
+  - [CUPS/Troubleshooting](https://wiki.archlinux.org/title/CUPS/Troubleshooting)
 
-**Guides:**
+- Guides
 
-[CUPS Arch Wiki](https://wiki.archlinux.org/title/CUPS)
+  - [CUPS Arch Wiki](https://wiki.archlinux.org/title/CUPS)
 
-**Youtube:**
-
-[How To Install Printers On Linux](https://www.youtube.com/watch?v=jnmCbEWNV1w)
-
-[How to Install a Printer in Arch Linux!](https://www.youtube.com/watch?v=utK889gYAmM)
-
+- Youtube
+  - [How To Install Printers On Linux](https://www.youtube.com/watch?v=jnmCbEWNV1w)
+  - [How to Install a Printer in Arch Linux!](https://www.youtube.com/watch?v=utK889gYAmM)
