@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Networking on WittyJudge</title>
+    <link>https://wittyjudge.github.io/tags/networking/</link>
+    <description>Recent content in Networking on WittyJudge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 17 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wittyjudge.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TCP Header</title>
+      <link>https://wittyjudge.github.io/posts/tcp-header/</link>
+      <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://wittyjudge.github.io/posts/tcp-header/</guid>
+      <description>In TCP, each segment consist of data that are sent to the receiver&amp;rsquo;s server. Alongside the data, the TCP segment contains header which holds information about the connection and the current data being sent. The TCP header size can range from 20 bytes (160 bits) to 60 bytes (480 bits), with 20 bytes designated for 10 mandatory fields and 40 bytes for optional.
+The table of TCP header is shown bellow:</description>
+    </item>
+    
+  </channel>
+</rss>
