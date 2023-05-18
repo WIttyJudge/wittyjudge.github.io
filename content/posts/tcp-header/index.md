@@ -28,33 +28,33 @@ The table of TCP header is shown bellow:
 | Urgent Point          | 16          | Offset indicating urgent data                |
 | Options               | 0-320       | Optional parameters                          |
 
-**Source Port** - It identifies the port of the sending application.
+**Source Port** - identifies the port of the sending application.
 
-**Destination Port** - It identifies the port of the receiving application.
+**Destination Port** - identifies the port of the receiving application.
 
-**Sequence number** - It indicates the sequence number of the first data byte in the TCP segment. It helps to ensure that data is correctly ordered and reassembled at the receiver.
+**Sequence number** - indicates the sequence number of the first data byte in the TCP segment. It helps to ensure that data is correctly ordered and reassembled at the receiver.
 
 **Acknowledgment number** – If the ACK flag is set, this field contains the acknowledgment number of the next expected data byte by the sender. It acknowledges the receipt of previously received data.
 
 **Header Length (**HLEN**)** - Also know as the **Data Offset**, it specified the size of the TCP header in 32-bit [words](https://en.wikipedia.org/wiki/Word_%28computer_architecture%29). The minimum size header is 5 words (20 bytes) and the maximum is 15 words (60 bytes).
 
-**Reserved** - It comprises a few bits that are currently set to zero and are reserved for possible future use by the TCP protocol or related specifications.
+**Reserved** - comprises a few bits that are currently set to zero and are reserved for possible future use by the TCP protocol or related specifications.
 
-**Flags** - These flags indicate specific conditions or actions related to the TCP communication.
+**Flags** - indicate specific conditions or actions related to the TCP communication.
 Here is a list of commonly used flags:
 
-- SYN (Synchronize) - It is used to initialize TCP connection. When a device wants to establish connection with another device, which is also called a three-way handshake, it sends a TCP segments with SYN flag.3
-- ACK (Acknowledge) - It is used by receiving device to confirm that the data was successfully received.
-- FIN (Finish) - It is used when device want to terminate connection. The name of this process is four-way handshake.
-- RST (Reset) - it signifies that we should immediately terminate the connection. It can happen because of many things, for example: connection aborted, TCP port doesn't exist, TCP buffer overflow, etc..
-- PSH (Push) - It indicates that the data sent to the receiver is important and should be forwarded to the application without delay.
-- URG (Urgent) - The URG flag is used to inform a receiving device that certain data within a segment is urgent and should be prioritized. Mostly, URG flag is used for time-sensitive data.
+- SYN (Synchronize) - used to initialize TCP connection. When a device wants to establish connection with another device, which is also called a three-way handshake, it sends a TCP segments with SYN flag.3
+- ACK (Acknowledge) - used by receiving device to confirm that the data was successfully received.
+- FIN (Finish) - used when device want to terminate connection. The name of this process is four-way handshake.
+- RST (Reset) - signifies that we should immediately terminate the connection. It can happen because of many things, for example: connection aborted, TCP port doesn't exist, TCP buffer overflow, etc..
+- PSH (Push) - indicates that the data sent to the receiver is important and should be forwarded to the application without delay.
+- URG (Urgent) - used to inform a receiving device that certain data within a segment is urgent and should be prioritized. Mostly, it is used for time-sensitive data.
 
-**Window Size** - This field is used by mechanism called Flow Control and indicates the maximum amount of data receiver can handle.
+**Window Size** - used by mechanism called Flow Control and indicates the maximum amount of data receiver can handle.
 Flow control mechanism regulates the rate of data transmission to prevent congestion, packet loss, and degradation of network performance.
 
-**Checksum** - This field holds the checksum for error control. It is mandatory in TCP as opposed to UDP.
+**Checksum** - field holds the checksum for error control. It is mandatory in TCP as opposed to UDP.
 
 **Urgent Point** - If the URG flag is set, it provides more specific information about the location of the urgent data within the segment.
 
-**Options**- this field is optional and can be anywhere between 0 and 40 bytes (320 bits).
+**Options**- optional and can be anywhere between 0 and 40 bytes (320 bits).
