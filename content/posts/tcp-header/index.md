@@ -43,14 +43,14 @@ The table of TCP header is shown bellow:
 **Flags** - indicate specific conditions or actions related to the TCP communication.
 Here is a list of commonly used flags:
 
-- SYN (Synchronize) - used to initialize TCP connection. When a device wants to establish connection with another device, which is also called a three-way handshake, it sends a TCP segments with SYN flag.3
-- ACK (Acknowledge) - used by receiving device to confirm that the data was successfully received.
-- FIN (Finish) - used when device want to terminate connection. The name of this process is four-way handshake.
+- SYN (Synchronize) - is used to initialize TCP connection. When a device wants to establish connection with another device, which is also called a three-way handshake, it sends a TCP segments with SYN flag.3
+- ACK (Acknowledge) - is used by receiving device to confirm that the data was successfully received.
+- FIN (Finish) - is used when device want to terminate connection. The name of this process is four-way handshake.
 - RST (Reset) - signifies that we should immediately terminate the connection. It can happen because of many things, for example: connection aborted, TCP port doesn't exist, TCP buffer overflow, etc..
 - PSH (Push) - indicates that the data sent to the receiver is important and should be forwarded to the application without delay.
-- URG (Urgent) - used to inform a receiving device that certain data within a segment is urgent and should be prioritized. Mostly, it is used for time-sensitive data.
+- URG (Urgent) - is used to inform a receiving device that certain data within a segment is urgent and should be prioritized. Mostly, it is used for time-sensitive data.
 
-**Window Size** - used by mechanism called Flow Control and indicates the maximum amount of data receiver can handle.
+**Window Size** - is used by mechanism called Flow Control and indicates the maximum amount of data receiver can handle.
 Flow control mechanism regulates the rate of data transmission to prevent congestion, packet loss, and degradation of network performance.
 
 **Checksum** - field holds the checksum for error control. It is mandatory in TCP as opposed to UDP.
