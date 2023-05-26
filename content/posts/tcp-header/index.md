@@ -28,19 +28,19 @@ The table of TCP header is shown bellow:
 | Urgent Point          | 16          | Offset indicating urgent data                |
 | Options               | 0-320       | Optional parameters                          |
 
-**Source Port** - identifies the port of the sending application.
+**Source Port** identifies the port of the sending application.
 
-**Destination Port** - identifies the port of the receiving application.
+**Destination Port** identifies the port of the receiving application.
 
-**Sequence number** - indicates the sequence number of the first data byte in the TCP segment. It helps to ensure that data is correctly ordered and reassembled at the receiver.
+**Sequence number** indicates the sequence number of the first data byte in the TCP segment. It helps to ensure that data is correctly ordered and reassembled at the receiver.
 
-**Acknowledgment number** – If the ACK flag is set, this field contains the acknowledgment number of the next expected data byte by the sender. It acknowledges the receipt of previously received data.
+**Acknowledgment number** – if the ACK flag is set, this field contains the acknowledgment number of the next expected data byte by the sender. It acknowledges the receipt of previously received data.
 
-**Header Length (**HLEN**)** - Also know as the **Data Offset**, it specified the size of the TCP header in 32-bit [words](https://en.wikipedia.org/wiki/Word_%28computer_architecture%29). The minimum size header is 5 words (20 bytes) and the maximum is 15 words (60 bytes).
+**Header Length (**HLEN**)** - also know as the **Data Offset**, it specified the size of the TCP header in 32-bit [words](https://en.wikipedia.org/wiki/Word_%28computer_architecture%29). The minimum size header is 5 words (20 bytes) and the maximum is 15 words (60 bytes).
 
-**Reserved** - comprises a few bits that are currently set to zero and are reserved for possible future use by the TCP protocol or related specifications.
+**Reserved** comprises a few bits that are currently set to zero and are reserved for possible future use by the TCP protocol or related specifications.
 
-**Flags** - indicate specific conditions or actions related to the TCP communication.
+**Flags** indicate specific conditions or actions related to the TCP communication.
 Here is a list of commonly used flags:
 
 - **SYN (Synchronize)** is used to initialize TCP connection. When a device wants to establish connection with another device, which is also called a three-way handshake, it sends a TCP segments with SYN flag.3
@@ -53,8 +53,8 @@ Here is a list of commonly used flags:
 **Window Size** is used by mechanism called Flow Control and indicates the maximum amount of data receiver can handle.
 Flow control mechanism regulates the rate of data transmission to prevent congestion, packet loss, and degradation of network performance.
 
-**Checksum** - field holds the checksum for error control. It is mandatory in TCP as opposed to UDP.
+**Checksum** holds the checksum for error control. It is mandatory in TCP as opposed to UDP.
 
-**Urgent Point** - If the URG flag is set, it provides more specific information about the location of the urgent data within the segment.
+**Urgent Point** - if the URG flag is set, it provides more specific information about the location of the urgent data within the segment.
 
-**Options**- optional and can be anywhere between 0 and 40 bytes (320 bits).
+**Options** is optional and can be anywhere between 0 and 40 bytes (320 bits).
