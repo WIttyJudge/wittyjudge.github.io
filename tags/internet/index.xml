@@ -4,18 +4,19 @@
     <title>Internet on WittyJudge</title>
     <link>https://wittyjudge.github.io/tags/internet/</link>
     <description>Recent content in Internet on WittyJudge</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wittyjudge.github.io/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wittyjudge.github.io/tags/internet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TCP Header</title>
       <link>https://wittyjudge.github.io/posts/tcp-header/</link>
       <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://wittyjudge.github.io/posts/tcp-header/</guid>
-      <description>In TCP, each segment consist of data that are sent to the receiver&amp;rsquo;s server. Alongside the data, the TCP segment contains header which holds information about the connection and the current data being sent. The TCP header size can range from 20 bytes (160 bits) to 60 bytes (480 bits), with 20 bytes designated for 10 mandatory fields and 40 bytes for optional.
-The table of TCP header is shown bellow:</description>
+      <description>&lt;p&gt;In TCP, each segment consist of data that are sent to the receiver&amp;rsquo;s server.
+Alongside the data, the TCP segment contains header which holds information about the connection and the current data being sent.
+The TCP header size can range from 20 bytes (160 bits) to 60 bytes (480 bits), with 20 bytes designated for 10 mandatory fields and 40 bytes for optional.&lt;/p&gt;
+&lt;p&gt;The table of TCP header is shown bellow:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
