@@ -74,7 +74,7 @@ params:
     - name: rss
       url: "index.xml"
     - name: cv
-      url: "/resume.pdf"
+      url: "/ruslan_kondratiuk_resume.pdf"
 
   editPost:
     URL: "https://github.com/WIttyJudge/wittyjudge.github.io/tree/master/content"
