@@ -71,6 +71,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/wittyjudge"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ruslan-kondratiuk-a24327262"
     - name: rss
       url: "index.xml"
     - name: cv
