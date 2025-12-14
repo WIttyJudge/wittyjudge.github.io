@@ -1,6 +1,5 @@
 ---
-title: "Search" # in any language you want
-layout: "search" # is necessary
-summary: "search"
-placeholder: "Type something to search..."
+title: "Search"
+layout: "search"
+placeholder: Search demo site with full text fuzzy search ...
 ---

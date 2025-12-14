@@ -2,7 +2,7 @@
 title: Arch Linux Printer Install with CUPS
 date: 2023-01-14
 cover:
-  image: "images/cover.avif"
+  image: "images/arch-linux-printer-install/cover.avif"
 tags: ["Arch Linux", "Linux", "CUPS", "Printer"]
 ---
 
@@ -62,12 +62,10 @@ However, I have heard that some users may experience difficulty if their printer
 ## References
 
 - Troubleshooting
-
   - [CUPS/Printer-specific problems](https://wiki.archlinux.org/title/CUPS/Printer-specific_problems)
   - [CUPS/Troubleshooting](https://wiki.archlinux.org/title/CUPS/Troubleshooting)
 
 - Guides
-
   - [CUPS Arch Wiki](https://wiki.archlinux.org/title/CUPS)
 
 - Youtube

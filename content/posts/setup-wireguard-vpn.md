@@ -2,8 +2,8 @@
 title: How to set up WireGuard on your own Ubuntu 20.04 server
 date: 2022-04-15
 cover:
-  image: 'images/cover.avif'
-tags: ['VPN', 'Wireguard']
+  image: "images/setup-wireguard-vpn/cover.avif"
+tags: ["VPN", "Wireguard"]
 ---
 
 ## Introduction
@@ -46,7 +46,7 @@ Check out the performance comparison charts done by the Jason Donenfeld, the Wir
 - **CPUs**: Intel Core i7-3820QM and Intel Core i7-5200U.
 - **Ethernet Cards**: Intel 82579LM and Intel I218LM gigabit Ethernet.
 
-![WireGuard performance charts published by author.](images/performance-by-author.avif)
+![WireGuard performance charts published by author.](images/setup-wireguard-vpn/performance-by-author.avif)
 
 If you're interested in setting up WireGuard on your own server, keep reading.
 

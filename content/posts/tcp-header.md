@@ -2,8 +2,8 @@
 title: TCP Header
 date: 2023-05-17
 cover:
-  image: 'images/cover.avif'
-tags: ['TCP', 'Header', 'Networking', 'Internet']
+  image: "images/tcp-header/cover.avif"
+tags: ["TCP", "Header", "Networking", "Internet"]
 ---
 
 In TCP, each segment consist of data that are sent to the receiver's server.
