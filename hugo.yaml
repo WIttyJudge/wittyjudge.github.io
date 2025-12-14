@@ -1,0 +1,74 @@
+baseURL: "https://wittyjudge.github.io/"
+languageCode: en-us
+title: WittyJudge
+theme: ["PaperMod"]
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search
+          weight: 10
+        - name: Tags
+          url: tags
+          weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: Hi there, I'm Ruslan. 👋
+    Content: >
+      - Fall in love with Backend development.
+
+      - Linux, Neovim, CLI tools, and general productivity.
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ruslan-kondratiuk-a24327262"
+    - name: github
+      url: "https://github.com/wittyjudge"
+    - name: cv
+      url: "/ruslan_kondratiuk_resume.pdf"
+    - name: rss
+      url: "index.xml"
