@@ -4,7 +4,7 @@
     <title>Posts on WittyJudge</title>
     <link>https://wittyjudge.github.io/posts/</link>
     <description>Recent content in Posts on WittyJudge</description>
-    <generator>Hugo -- 0.142.0</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 May 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wittyjudge.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -39,7 +39,6 @@ All you need to do is just log in to your favorite DE, search for &amp;ldquo;pri
 &lt;li&gt;It gives you more freedom to access the internet safely from your smartphone or laptop when connected to a doubt network, like any public WiFi.&lt;/li&gt;
 &lt;li&gt;You have an access to websites blocked in your country for some reasons.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;!-- **Here are just a few reasons why WireGuard is so awesome:** --&gt;
 &lt;h2 id=&#34;wireguard-is-so-awesome-but-why&#34;&gt;WireGuard is so awesome. But why?&lt;/h2&gt;
 &lt;h3 id=&#34;minimal-code-base&#34;&gt;Minimal code base&lt;/h3&gt;
 &lt;p&gt;In fact, it&amp;rsquo;s implemented in less then 4,000 lines of code.
