@@ -4,14 +4,16 @@
     <title>Header on WittyJudge</title>
     <link>https://wittyjudge.github.io/tags/header/</link>
     <description>Recent content in Header on WittyJudge</description>
-    <generator>Hugo -- 0.152.2</generator>
-    <language>en</language>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>ruslan.kondratiuk.dev@gmail.com (Ruslan Kondratiuk)</managingEditor>
+    <webMaster>ruslan.kondratiuk.dev@gmail.com (Ruslan Kondratiuk)</webMaster>
     <lastBuildDate>Wed, 17 May 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wittyjudge.github.io/tags/header/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TCP Header</title>
       <link>https://wittyjudge.github.io/posts/tcp-header/</link>
-      <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate><author>ruslan.kondratiuk.dev@gmail.com (Ruslan Kondratiuk)</author>
       <guid>https://wittyjudge.github.io/posts/tcp-header/</guid>
       <description>&lt;p&gt;In TCP, each segment consist of data that are sent to the receiver&amp;rsquo;s server.
 Alongside the data, the TCP segment contains header which holds information about the connection and the current data being sent.
