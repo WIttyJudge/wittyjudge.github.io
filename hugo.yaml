@@ -1,5 +1,5 @@
 baseURL: "https://wittyjudge.github.io/"
-languageCode: en-us
+locale: en-us
 title: WittyJudge
 theme: ["PaperMod"]
 
@@ -20,7 +20,7 @@ minify:
 
 languages:
   en:
-    languageName: "English"
+    label: "English"
     weight: 1
     menu:
       main:
@@ -41,6 +41,9 @@ outputs:
     - JSON
 
 params:
+  author:
+    name: Ruslan Kondratiuk
+    email: ruslan.kondratiuk.dev@gmail.com
   env: production
   defaultTheme: auto
   disableThemeToggle: false
